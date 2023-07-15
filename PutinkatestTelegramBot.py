@@ -2,7 +2,7 @@ import telebot
 
 bot = telebot.TeleBot('6044281281:AAH0pb6vyjvoMyNznYQRRtEgS01kbc4pcyI')
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['start', 'main', 'hello'])
 
 def main(message):
     bot.send_message(message.chat.id, "Hello!")
